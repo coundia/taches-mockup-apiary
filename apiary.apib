@@ -1,0 +1,46 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# Todo
+Projet todo pour 
+
+## Lister taches  [/taches]
+
+### Lister taches [GET]
+
++ Response 200 (application/json)
+
+        [
+                {
+                  "id" : 1,
+                  "titre" : "Apprendre apiary   "
+                }
+                ,
+                   {
+                  "id" : 2,
+                  "titre" : "Apprendre blueprint  "
+                }
+            
+        ]
+### Creer une taches [POST]
+
+ Creer une taches
+
++ Request (application/json)
+
+        {
+        
+        "titre" : "Apprendre blueprint  "
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /taches/3
+
+    + Body
+    
+            {
+            "titre" : "Apprendre blueprint  "
+            }
